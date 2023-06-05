@@ -6,10 +6,10 @@
   </template>
 
 <script lang="ts" setup>
-import { onMounted, ref  } from "vue";
+import { onMounted, ref, Ref  } from "vue";
 import { useRoute } from "vue-router";
 
-let postId = ref(0)
+let postId:Ref<string> = ref('')
 
 onMounted(() => {
   const route = useRoute()
